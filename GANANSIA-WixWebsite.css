@@ -1,0 +1,1435 @@
+/* WRAPPER */
+
+* {
+    margin: 0;
+    font-family: helveticaNew;
+}
+
+@font-face {
+    font-family: helveticaNew;
+    src: url("./helveticaneue/www.freefontsdownload.net.url");
+}
+
+/*NAVBAR*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100vw;
+}
+
+.Logo {
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WebsiteContent {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+}
+
+.ListElement {
+    width: 100vw;
+}
+
+.navElement:hover {
+    color: #99C3FF;
+}
+
+.navElement {
+    display: inline-block;
+    margin-right: 5%;
+    text-decoration: none;
+    color: #575555;
+    margin-top: 1%;
+}
+
+.Languages {
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0.5%;
+}
+
+.SignIn {
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in {
+    background-color: white;
+    color: black;
+    border: 2px solid #99C3FF;
+    border-radius: 30px;
+    font-size: x-large;
+    padding: 7px 42px;
+    transition: ease-in-out 0.4s;
+}
+
+.sign-in:hover {
+    background-color: #237CFF;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    position: relative;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.hamburger-slice {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 0px;
+    margin-top: 15%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    background-color: white;
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: 36%;
+    line-height: 50px;
+}
+
+.Languages:hover .dropdown-content {
+    display: block;
+}
+
+.DropdownLanguagesElement {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #575555;
+}
+
+.DropdownLanguagesElement:hover {
+    border-top: 4px solid #99C3FF;
+}
+
+.dropdownSubscriptioncontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    background-color: white;
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left: 14%;
+    line-height: 50px;
+}
+
+.menuDrop:hover .dropdownSubscriptioncontent {
+    display: block;
+}
+
+.DropdownSubscriptionElement {
+    text-decoration: none;
+    color: #575555;
+}
+
+.DropdownSubscriptionElement:hover {
+    color: #99C3FF;
+}
+
+.dropdownPartnerscontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    background-color: white;
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left: 33%;
+    line-height: 50px;
+}
+
+.menuDrop:hover .dropdownPartnerscontent {
+    display: block;
+}
+
+.DropdownPartnersElement {
+    text-decoration: none;
+    color: #575555;
+}
+
+.DropdownPartnersElement:hover {
+    color: #99C3FF;
+}
+
+@media screen and (max-width: 500px) {
+    .Logo {
+        margin-left: 10%;
+    }
+    .navElement {
+        display: none;
+    }
+    .navbar a {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        margin-top: 11%;
+    }
+}
+
+/* First Section */
+
+.Section-one {
+    width: 100vw;
+    text-align: center;
+    height: 881px;
+    background-color: #FAFAFA;
+    /* background: linear-gradient(180deg, #ffffff 880px, #0b3083 10px); */
+}
+
+.Section-one .title {
+    font-size: 600%;
+    font-family: helveticaNew;
+    font-weight: normal;
+}
+
+.Section-one .sub-title {
+    margin-top: 1%;
+    font-size: 130%;
+    line-height: 150%;
+}
+
+.get-started {
+    background-color: #3381fe;
+    color: white;
+    border: 2px solid #578df7;
+    border-radius: 30px;
+    font-size: x-large;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.get-started:hover {
+    background-color: #3381fe;
+}
+
+.headset {
+    margin-right: 3%;
+    width: 17%;
+    margin-bottom: 8rem;
+}
+
+.GirlHeadset {
+    width: 14%;
+    margin-bottom: 6rem;
+    margin-left: -5%;
+}
+
+.dasktop {
+    max-width: 70%;
+    margin-left: -10%;
+    /* max-height: 100%; */
+}
+
+@media screen and (max-width: 500px) {
+    .Section-one {
+        height: 56.6vh;
+    }
+    .Section-one .title {
+        font-size: 40px;
+    }
+    .Section-one .sub-title {
+        font-size: 153%;
+    }
+    .dasktop {
+        /* margin-top: 1%; */
+        margin-left: -56%;
+    }
+    .headset {
+        display: none;
+    }
+    .GirlHeadset {
+        margin-bottom: 2rem;
+        margin-left: -73%;
+    }
+    .get-started {
+        display: flex;
+        width: -1px;
+        font-size: 20px;
+        text-align: center;
+        /* justify-content: center; */
+        margin-left: 27%;
+        margin-bottom: 0;
+        margin-top: 3%;
+    }
+    .FirstImages {
+        margin-top: 44px
+    }
+}
+
+/* Section Two */
+
+.Section-two {
+    background-color: #0B3083;
+    height: 80vh;
+    display: flex;
+    color: white;
+}
+
+.CreateWebsite {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freedom {
+    text-align: left;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.Design {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px
+}
+
+.TextDesign {
+    text-align: left;
+    font-family: helveticaNew;
+    margin-top: 18%;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.GetStarted {
+    color: white;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .Section-two {
+        height: 36vh;
+        flex-direction: column;
+        width: 100%;
+    }
+    .CreateWebsite {
+        justify-content: left;
+        width: 67vw;
+        margin-left: 58px;
+        margin-top: 2%;
+    }
+    .Design {
+        width: 100%;
+        justify-content: left;
+        width: 69vw;
+        margin-left: 18%;
+    }
+    .freedom {
+        font-size: 21px;
+        margin-top: 17%;
+        margin-left: 3%;
+    }
+    .TextDesign {
+        font-size: 14px;
+        margin-top: 6%;
+        line-height: 14px;
+    }
+    .GetStarted {
+        display: block;
+        margin-top: 6%;
+    }
+}
+
+/* SECTION THREE */
+
+.Section-three {
+    display: flex;
+    height: 130vh;
+    color: white;
+}
+
+.WebsiteBuild {
+    width: 50%;
+    height: 100%;
+    background-color: #065946;
+}
+
+.build {
+    font-size: 50px;
+    font-family: helveticaNew;
+    text-align: start;
+    padding: 18% 10% 1%;
+}
+
+.steps {
+    margin-left: 10%;
+    font-size: 22px;
+    line-height: 2em;
+    font-weight: lighter;
+    font-family: helveticaNew;
+}
+
+.FirstSteps {
+    height: 30vh;
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Customize {
+    width: 35%;
+    border-top: white 1px solid;
+}
+
+.TitleSteps {
+    font-family: helveticaNew;
+    margin-top: 7%;
+}
+
+.TextSteps {
+    font-family: helveticaNew;
+    margin-top: 15px;
+    font-weight: lighter;
+    line-height: 26px;
+}
+
+.AddFeatures {
+    width: 35%;
+    border-top: white 1px solid;
+}
+
+.SecondSteps {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.Edit {
+    width: 35%;
+    border-top: white 1px solid;
+}
+
+.Optimize {
+    width: 35%;
+    border-top: white 1px solid;
+}
+
+.startnow {
+    color: white;
+    font-size: x-large;
+    margin-left: 10%;
+    display: block;
+}
+
+.ImageCenter {
+    height: 100%;
+    width: 50%;
+}
+
+.WhiteDiv {
+    background-color: white;
+    height: 50%;
+    z-index: 2;
+}
+
+.GreyDiv {
+    background-color: #EEEEEE;
+    height: 50%;
+    z-index: 1;
+}
+
+.ResponsivePicture {
+    z-index: 3;
+    padding: 39% 11%;
+    max-width: 50;
+}
+
+@media screen and (max-width: 500px) {
+    .Section-three {
+        height: 40vh;
+        flex-direction: column;
+    }
+    .WebsiteBuild {
+        width: 100%;
+        height: 150vh;
+    }
+    .ImageCenter {
+        width: 100%;
+        height: 100vh;
+    }
+    .ResponsivePicture {
+        padding: 15% 6%;
+        height: 160%;
+        width: 88%;
+    }
+    .FirstSteps {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -21px;
+    }
+    .SecondSteps {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 185px;
+        margin-bottom: -48px;
+    }
+    .Customize {
+        width: 60%;
+        margin-bottom: 35px;
+        margin-top: 128px;
+    }
+    .AddFeatures {
+        width: 60%;
+    }
+    .Edit {
+        width: 60%;
+        margin-top: -48%;
+    }
+    .Optimize {
+        width: 60%;
+        margin-top: -60px;
+    }
+    .build {
+        font-size: 30px;
+        margin-top: -14%;
+        margin-left: 9%;
+    }
+    .steps {
+        font-size: 16px;
+        margin-left: 20%;
+        width: 51vw;
+        line-height: 16px;
+    }
+    .TitleSteps {
+        font-size: 18px;
+        margin-top: 11px;
+    }
+    .TextSteps {
+        line-height: 15px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .startnow {
+        font-size: 18px;
+        margin-left: 20%;
+        display: block;
+        margin-bottom: 10%;
+    }
+    .WhiteDiv {
+        height: 30%;
+    }
+    .GreyDiv {
+        height: 30%;
+    }
+}
+
+/* SECTION FOUR */
+
+.SectionFour {
+    display: flex;
+    height: 100vh;
+    margin-bottom: 6%;
+}
+
+.LeftDiv {
+    height: 90%;
+    width: 50%;
+}
+
+.RightDiv {
+    height: 90%;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.ImageDesign {
+    padding: 10% 28%;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.TextDiv {
+    height: 95vh;
+    width: 40vw;
+    margin-top: 10.5%;
+    margin-left: 8%;
+}
+
+.WixEditor {
+    font-size: 60px;
+}
+
+.EditorText {
+    font-size: 28px;
+    margin-top: 10%;
+}
+
+.GetStartedTwo {
+    color: black;
+    display: block;
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionFour {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 218%;
+    }
+    .LeftDiv {
+        width: 100%;
+        height: 50vh;
+        margin-top: 18%;
+    }
+    .RightDiv {
+        width: 92%;
+        height: 55vh;
+        margin-left: 7%;
+    }
+    .TextDiv {
+        width: 80%;
+        height: 80%;
+    }
+    .WixEditor {
+        font-size: 30px;
+        width: 75%;
+    }
+    .EditorText {
+        font-size: 20px;
+    }
+    .ImageDesign {
+        padding: 32% 5%;
+        max-height: 109%;
+    }
+    .GetStartedTwo {
+        font-size: 20px;
+    }
+}
+
+/* SECTION FIVE */
+
+.SectionFive {
+    height: 140vh;
+    width: 100vw;
+    display: flex;
+}
+
+.SectionFiveLeft, .SectionFiveRight {
+    height: 100%;
+    width: 50%;
+}
+
+.WixADI {
+    height: 95%;
+    width: 70%;
+    margin-left: 30%;
+}
+
+.WixPlatform {
+    height: 95%;
+    width: 70%;
+    margin-left: 7%;
+}
+
+.ADITitle, .PlatformTitle {
+    font-size: 50px;
+}
+
+.ADIParagraph, .PlatformParagraph {
+    font-size: 23px;
+    margin-top: 8%;
+}
+
+.GetStartedThree {
+    color: black;
+    display: block;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+.ClassicPicture, .CodePicture {
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionFive {
+        flex-direction: column;
+        margin-top: 31%;
+    }
+    .WixADI, .WixPlatform {
+        width: 169%;
+        height: 80%;
+        margin-left: 28px;
+        margin-top: 25%;
+    }
+    .ADITitle, .PlatformTitle {
+        font-size: 180%;
+    }
+    .ADIParagraph, .PlatformParagraph {
+        width: 100%;
+        font-size: 20px;
+    }
+    .GetStartedThree {
+        font-size: 101%;
+        margin-top: 10%;
+        font-weight: bold;
+    }
+    .ClassicPicture, .CodePicture {
+        width: 100%;
+    }
+}
+
+/* SECTION FIVE */
+
+.SectionSix {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+}
+
+.ProfessionalFeatures {
+    height: 336px;
+    width: 1100px;
+    margin-left: 15%;
+    margin-top: 6%;
+}
+
+.ProfessionalFeaturesText {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hr {
+    width: 600px;
+    margin-left: 474px;
+    margin-top: -7px;
+}
+
+.ProfessionalFeaturesTitle {
+    font-size: 50px;
+    margin-top: 50px;
+    width: 742px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionSix {
+        margin-top: 102%;
+        flex-direction: column;
+        display: flex;
+        height: auto;
+    }
+    .ProfessionalFeatures {
+        width: 83%;
+        margin-left: 8%;
+        height: auto;
+    }
+    .hr {
+        margin-left: 0%;
+        margin-top: 9%;
+        width: 100%;
+    }
+    .ProfessionalFeaturesTitle {
+        width: 100%;
+        font-size: 35px;
+        margin-top: 5%;
+    }
+}
+
+/* SECTION SEVEN */
+
+.SectionSeven {
+    height: 300vh;
+    width: 100vw;
+    margin-top: 3%;
+}
+
+.SectionSevenRow {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.ImagesLeft {
+    height: 100%;
+    width: 34%;
+    margin-left: 15%;
+}
+
+.ImageRight {
+    height: 100%;
+    width: 36%;
+    margin-left: 6%;
+}
+
+.BlockOne {
+    height: 90%;
+    width: 97%;
+}
+
+.BlockTwo {
+    height: 100%;
+    width: 82%;
+    margin-left: 8%;
+    margin-top: 17%;
+}
+
+.BlockThree {
+    height: 100%;
+    width: 80%;
+    margin-left: -10%;
+    margin-top: -35%;
+}
+
+.BlockFour {
+    height: 85%;
+    width: 96%;
+    margin-left: -20%
+}
+
+.BlockFive {
+    height: 85%;
+    width: 95%;
+    margin-top: -25%;
+}
+
+.BlockSix {
+    height: 88%;
+    width: 90%;
+    margin-top: -5%;
+}
+
+.ContentOne {
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.ContentTwo {
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.ContentThree {
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.ContentFour {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.ContentFive {
+    margin-left: 4%;
+    margin-top: 3%;
+}
+
+.ContentSix {
+    margin-left: 12%;
+    margin-top: 3%;
+}
+
+.SectionSevenParagraph {
+    margin-bottom: 3%;
+}
+
+.SectionSevenLink {
+    text-decoration: none;
+    color: #5293FE;
+}
+
+.SectionSevenImages {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionSeven {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        margin-bottom: -90%;
+    }
+    .SectionSevenRow {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .ImagesLeft {
+        width: 100%;
+        height: 75%;
+        margin-left: 0%;
+    }
+    .ImageRight {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .Block {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .SectionSevenImages {
+        width: 90%;
+        justify-content: center;
+    }
+    .SectionSevenLink {
+        display: block;
+    }
+    .SectionSevenSeparate {
+        display: none;
+    }
+}
+
+/* SECTION EIGHT */
+
+.SectionEight {
+    height: 130vh;
+    width: 100vw;
+    display: flex;
+    margin-top: -17%;
+}
+
+.SectionEightLeft {
+    height: 100%;
+    width: 50vw;
+}
+
+.SectionEightRight {
+    height: 100%;
+    width: 50vw;
+    background-color: #F4F4F4;
+}
+
+.AllPagesImage {
+    width: 100%;
+    height: 100%;
+}
+
+.GrowBuisiness {
+    padding: 40% 18%;
+}
+
+.GrowTitle {
+    font-size: 45px;
+    margin-bottom: 6%;
+}
+
+.GrowText {
+    font-size: 20px;
+    font-weight: lighter;
+    width: 82%;
+    margin-bottom: 13%;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionEight {
+        flex-direction: column-reverse;
+        margin-top: 70%;
+    }
+    .SectionEightLeft {
+        width: 100%;
+        height: 100%;
+    }
+    .SectionEightRight {
+        width: 100%;
+        height: 65%;
+    }
+    .GrowBuisiness {
+        padding: 10% 10%;
+    }
+    .GrowTitle {
+        font-size: 30px
+    }
+    .GrowText {
+        font-size: 20px;
+        margin-bottom: 7%;
+        width: 263px;
+    }
+}
+
+/* SECTION NINE */
+
+.SectionNine {
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    color: white;
+    background: #1A1A1A;
+}
+
+.SectionNineLeft {
+    width: 50%;
+    height: 100%;
+}
+
+.SectionNineRight {
+    width: 50%;
+    height: 100%;
+}
+
+.SectionNineTitle {
+    font-size: 48px;
+    margin-top: 30%;
+    margin-left: 30%;
+}
+
+.SectionNineText {
+    width: 69%;
+    margin-left: 8%;
+    margin-top: 30%;
+    line-height: 1.5;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-bottom: 10%;
+}
+
+.SectionNineGetStarted {
+    color: white;
+    margin-left: 8%;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionNine {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .SectionNineLeft {
+        width: 100%;
+        height: 30%;
+    }
+    .SectionNineRight {
+        width: 100%;
+    }
+    .SectionNineTitle {
+        margin-left: 10%;
+        margin-top: 11%;
+        font-size: 29px;
+        width: 60%;
+    }
+    .SectionNineText {
+        margin-left: 10%;
+        margin-top: 5%;
+        font-size: 20px;
+        width: 80%;
+    }
+    .SectionNineGetStarted {
+        margin-left: 10%;
+    }
+}
+
+/* SECTION TEN */
+
+.SectionTen {
+    height: 75vh;
+    width: 100vw;
+    background-color: #F4F4F4;
+}
+
+.WebsiteBySteps {
+    width: 50%;
+    height: 80%;
+    margin-left: 15%;
+}
+
+.SectionTenTitle {
+    font-size: 50px;
+}
+
+.SixSteps {
+    margin-top: 3%;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.ListSteps {
+    margin-top: 7%;
+    font-size: 19px;
+    line-height: 2
+}
+
+.SectionTenGetStarted {
+    font-size: 25px;
+    margin-top: 5%;
+    margin-left: 3%;
+    color: black;
+}
+
+.LinkLearn {
+    color: black;
+    margin-left: 3%;
+}
+
+.StartNow {
+    color: black;
+}
+
+.Twobuttons{
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionTen {
+        flex-direction: column;
+        height: 125vh;
+    }
+    .WebsiteBySteps {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .SectionTenTitle {
+        font-size: 33px;
+        width: 63%;
+        margin-left: 8%;
+    }
+    .SixSteps {
+        font-size: 24px;
+        width: 72%;
+        margin-left: 8%;
+    }
+    .ListSteps li {
+        width: 83%;
+    }
+    .LinkLearn {
+        display: inline;
+        color: black;
+        font-size: 24px;
+        margin-left: 100%;
+    }
+    .StartNow {
+        display: inline;
+        color: black;
+        font-size: 24px;
+    }
+    .SectionTenGetStarted {
+        margin-left: 6%;
+        font-size: 20px;
+    }
+
+    .Twobuttons{
+        flex-direction: column;
+    }
+}
+
+/* SECTION ELEVEN */
+
+.SectionEleven {
+    height: 160vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.TemplatesTitle {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.TemplatesImages {
+    width: 100%;
+    height: 70%;
+}
+
+.SectionElevenTitle {
+    margin-top: 5%;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.SectionElevenText {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.FirstRowTemplatesImages {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.SecondRowTemplatesImages {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.ElementOne, .ElementTwo, .ElementThree, .ElementFour, .ElementFive, .ElementSix {
+    height: 100%;
+    width: 25%;
+}
+
+.ImageTemplate {
+    width: 100%;
+}
+
+.TextTemplate {
+    font-size: 20px;
+}
+
+.LinkTemplates {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.SeeAllTemplates {
+    color: black;
+}
+
+.TemplatesPhone {
+    display: none;
+    width: 100vw;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionEleven {
+        height: 50%;
+    }
+    .TemplatesPhone {
+        display: inline;
+    }
+    .TemplatesTitle {
+        margin-top: 10%;
+    }
+    .ImageTemplatesPhone {
+        width: 100%;
+    }
+    .TemplatesImages {
+        display: none;
+    }
+    .FirstRowTemplatesImages {
+        display: none;
+    }
+}
+
+/* FAQ */
+
+.SectionTwelve {
+    height: 290vh;
+    width: 100vw;
+}
+
+.FAQ {
+    height: 250vh;
+    width: 70%;
+    margin-top: 6%;
+    margin-left: 15%;
+}
+
+.FAQTitle {
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.FAQQuestions {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid black
+
+}
+
+.Question {
+    width: 50%;
+}
+
+.Response{
+    width: 50%;
+}
+
+.ListQuestions{
+    font-size: 18px;
+    margin-top: 10%;
+}
+
+.ListResponses{
+    font-size: 18px;
+    margin-top: 8%;
+}
+
+.QuestionNumber{
+    margin-right: 7%
+}
+
+@media screen and (max-width: 500px) {
+    .SectionTwelve {
+        margin-top: 5%;
+        height: 230vh;
+        margin-bottom: 5%;
+    }
+    .FAQQuestions {
+        flex-direction: column;
+        width: 100%;
+        height: 15%;
+    }
+
+    .FAQ {
+        width: 100%;
+        margin: 0;
+    }
+
+    .FAQTitle{
+        margin-left: 5%;
+    }
+
+    .Question {
+        width: 100%;
+    }
+
+    .Response{
+        width: 100%;
+    }
+
+    .ListQuestions{
+        font-size: 16px;
+        margin-top: 5%;
+    }
+    
+    .ListResponses{
+        font-size: 15px;
+        margin-top: 5%;
+    }
+
+
+    .QuestionTwo, .QuestionThree, .QuestionFour, .QuestionFive, .QuestionSix, .QuestionSeven, .QuestionEight{
+        margin-top: -25%;    
+    }   
+}
+
+
+/* SECTION TWELVE */
+
+.SectionThirteen{
+    height: 20vh;
+    width: 100vw;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesignedByWix{
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 500px) {
+    .SectionThirteen{
+        margin-top: -35%;
+        height: 10vh;
+    }
+}
+
+
+/* FOOTER */
+
+.Footer{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;    
+}
+
+.Product, .Company, .Community, .Support{
+    height: 90%;
+    width: 15%;
+    margin-top: 5%;
+}
+
+
+.WixInfo{
+    height: 90%;
+    width: 20%;
+    margin-top: 5%;
+}
+
+.FooterTitle{
+    margin-left: 18%;
+}
+
+.FooterLinks{
+    list-style: none;
+    text-decoration: none;
+    line-height: 2;
+    color: black;
+    margin-top: 10%;
+}
+
+.FooterLinks a{
+    text-decoration: none;
+    color: black;
+}
+
+.FooterLogoWix, .WixInfoText{
+    margin-bottom: 16%;
+    font-size: 18px;
+}
+
+.SocialNetworks{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.SocialNetworks a{
+    color: black;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .Footer{
+        flex-direction: column;
+        margin-top: 15%;
+        width: 100%;
+        height: 100%;
+    }
+    .Product, .Company, .Community, .Support, .WixInfo{
+        width: 100%;
+    }
+    .FooterTitle, .WixInfoText{
+        margin-left: 5%;
+    }
+    .FooterLinks{
+        margin-left: -5%;
+    }
+    .FooterLogoWix{
+        margin-top: 10%;
+    }
+}
+
+
